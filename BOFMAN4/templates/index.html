@@ -1,0 +1,560 @@
+{% load static %}
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap 4.3.1 CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!--    Fontawesome 5 CSS-->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <!--    Fontawesome 5 all CSS-->
+    <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+    <!--    Owl-carousel 2.3.4 CSS-->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <!--    magnific-popup CSS-->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!--    animate CSS-->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <!--    Style CSS-->
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+    <title>Bofman 4 || Home</title>
+</head>
+
+<body>
+    <!--Start Mobile menu-->
+    <div class="slide-menu">
+        <span class="menu-close"><i class="fal fa-times"></i></span>
+        <div class="slide-menu-wrp">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="#">Guest Stars</a></li>
+                        <li class="has-children">
+                            <a href="#">Lomba <i class="fal fa-plus"></i><i class="fal fa-minus"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="{% static 'index.html">I-TECH</a></li>
+                                    <li><a href="{% static 'index-video.html">ALMODE CUP</a></li>
+                                    <li><a href="{% static 'index-animate.html">ALINS CUP</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--End Mobile menu-->
+    <!--+++++++ Start header sec ++++++-->
+    {% include 'navbar.html' %} 
+
+    <!--+++++++ End header sec ++++++-->
+    <!--+++++++ Start hero_sec ++++++-->
+    <section class="hero_sec video">
+        <video loop muted autoplay poster="#" class="video-background">
+            <source src="{% static 'BOFMAN.mp4' %}" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="hero_sliderd">
+                <div class="single_slide">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-9 pd0">
+                            <h1>BOFMAN 4 PART 14 2023</h1>
+                            <p> 𝗕𝗼𝗳𝗺𝗮𝗻𝟰 𝗣𝘁 𝟭𝟰 merupakan acara pensi tahunan MAN 4 Jakarta, yang terdiri atas berbagai rangkaian acara
+                            </p>
+                            <div class="cmn_btn">
+                                <a href="#">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero_bond">
+                <div class="hero_bottom">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-lg-6">
+                            <div class="addrress">
+                                <span><i class="fal fa-map-marker-alt"></i> MAN 4 Jakarta, Jakarta Selatan</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-6 text-right">
+                            <div class="social_icons">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--+++++++ End hero_sec ++++++-->
+    <!--+++++++ Start about_sec ++++++-->
+    <section class="about_sec pad">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-lg-5">
+                    <div class="about_content">
+                        <span>Tentang Bofman</span>
+                        <h1>Bofman 4 Part 14 2023</h1>
+                        <p>𝗕𝗼𝗳𝗺𝗮𝗻𝟰 𝗣𝘁 𝟭𝟰 merupakan acara pensi tahunan MAN 4 Jakarta, yang terdiri atas berbagai rangkaian acara, perlombaan, projek, dan puncaknya pada hari 𝗦𝗮𝗯𝘁𝘂, 𝟮𝟴 𝗢𝗸𝘁𝗼𝗯𝗲𝗿 𝟮𝟬𝟮𝟯
+                        </p>
+                        <div class="cmn_btn blue">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-right">
+                    <div class="about_imges">
+                        <img src="{% static 'assets/img/about-bottomw.jpg' %}" alt="" class="a_bottom">
+                        <img src="{% static 'assets/img/about-topw.jpg' %}" alt="" class="a_top">
+                        <img src="{% static 'assets/img/about-circle.png' %}" alt="" class="a_circle">
+                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="a_pettern">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--+++++++ End about_sec ++++++-->
+    <!--+++++++ Start speaker_sec ++++++-->
+    <section class="speaker_sec pad">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7">
+                    <div class="title">
+                        <h1>Meet the guest stars</h1>
+                        <p>guest stars yg akan tampil di acara closing bofman 4 part 14
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_speaker">
+                        <img src="{% static 'assets/img/guest-star.jpg' %}" alt="">
+                        <div class="speaker_info">
+                            <h4>DISKOPANTERA</h4>
+                            <span>
+                            </span>
+                        </div>
+                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_speaker">
+                        <img src="{% static 'assets/img/guest-star.jpg' %}" alt="">
+                        <div class="speaker_info">
+                            <h4>TBA</h4>
+                            <span></span>
+                        </div>
+                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_speaker">
+                        <img src="{% static 'assets/img/guest-star.jpg' %}" alt="">
+                        <div class="speaker_info">
+                            <h4>TBA</h4>
+                            <span></span>
+                        </div>
+                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
+                    </div>
+                </div>
+                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-4">
+                    <div class="single_speaker">
+                        <img src="{% static 'assets/img/team-5.jpg' %}" alt="">
+                        <div class="speaker_info">
+                            <h4>smaim diyam</h4>
+                            <span>Founder of Sam Co.</span>
+                        </div>
+                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_speaker">
+                        <img src="{% static 'assets/img/team-6.jpg' %}" alt="">
+                        <div class="speaker_info">
+                            <h4>Malini jesora</h4>
+                            <span>Chief Speaker</span>
+                        </div>
+                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
+                    </div>
+                </div> -->
+                <!-- <div class="cmn_btn">
+                    <a href="#">view all</a>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!--+++++++ End speaker_sec ++++++-->
+    <!--+++++++ Start upcoming_sec ++++++-->
+    <!-- <section class="upcoming_sec pad">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7">
+                    <div class="title">
+                        <h1>Upcoming Events</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                            role="tab" aria-controls="nav-home" aria-selected="true">Day 01 - 27 November 2020</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                            role="tab" aria-controls="nav-profile" aria-selected="false">Day 02 - 29 November 2020</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                            role="tab" aria-controls="nav-contact" aria-selected="false">Day 03 - 30 November 2020</a>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="single_cfrc">
+                                <img src="{% static 'assets/img/book-ticket-1.jpg' %}" alt="">
+                                <div class="cfrc_inner">
+                                    <h5>UX/UI Designer Conference 2020</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                    </p>
+                                    <ul class="cfrn">
+                                        <li><a href="#"><i class="fal fa-microphone"></i> Adam Smith</a></li>
+                                        <li><a href="#"><i class="fal fa-map-marker-alt"></i> Calefonia, USA</a></li>
+                                        <li><a href="#"><i class="fal fa-clock"></i> 12 pm - 4 pm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ticket_btn">
+                                    <a href="#">Book Ticket</a>
+                                </div>
+                            </div>
+                            <div class="single_cfrc">
+                                <img src="{% static 'assets/img/book-ticket-2.jpg' %}" alt="">
+                                <div class="cfrc_inner">
+                                    <h5>Web Developer Conference 2020</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                    </p>
+                                    <ul class="cfrn">
+                                        <li><a href="#"><i class="fal fa-microphone"></i> Adam Smith</a></li>
+                                        <li><a href="#"><i class="fal fa-map-marker-alt"></i> Calefonia, USA</a></li>
+                                        <li><a href="#"><i class="fal fa-clock"></i> 12 pm - 4 pm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ticket_btn">
+                                    <a href="#">Book Ticket</a>
+                                </div>
+                            </div>
+                            <div class="single_cfrc">
+                                <img src="{% static 'assets/img/book-ticket-3.jpg' %}" alt="">
+                                <div class="cfrc_inner">
+                                    <h5>App Development Conference 2020</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                    </p>
+                                    <ul class="cfrn">
+                                        <li><a href="#"><i class="fal fa-microphone"></i> Adam Smith</a></li>
+                                        <li><a href="#"><i class="fal fa-map-marker-alt"></i> Calefonia, USA</a></li>
+                                        <li><a href="#"><i class="fal fa-clock"></i> 12 pm - 4 pm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ticket_btn">
+                                    <a href="#">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="single_cfrc">
+                                <img src="{% static 'assets/img/book-ticket-3.jpg' %}" alt="">
+                                <div class="cfrc_inner">
+                                    <h5>App Development Conference 2020</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                    </p>
+                                    <ul class="cfrn">
+                                        <li><a href="#"><i class="fal fa-microphone"></i> Adam Smith</a></li>
+                                        <li><a href="#"><i class="fal fa-map-marker-alt"></i> Calefonia, USA</a></li>
+                                        <li><a href="#"><i class="fal fa-clock"></i> 12 pm - 4 pm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ticket_btn">
+                                    <a href="#">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="single_cfrc">
+                                <img src="{% static 'assets/img/book-ticket-2.jpg' %}" alt="">
+                                <div class="cfrc_inner">
+                                    <h5>Web Developer Conference 2020</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                    </p>
+                                    <ul class="cfrn">
+                                        <li><a href="#"><i class="fal fa-microphone"></i> Adam Smith</a></li>
+                                        <li><a href="#"><i class="fal fa-map-marker-alt"></i> Calefonia, USA</a></li>
+                                        <li><a href="#"><i class="fal fa-clock"></i> 12 pm - 4 pm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ticket_btn">
+                                    <a href="#">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--+++++++ End upcoming_sec ++++++-->
+    <!--+++++++ Start gallery_sec ++++++-->
+    <section class="gallery_sec pad">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7">
+                    <div class="title">
+                        <h1>Events Gallery</h1>
+                        <p>Hasil dokumentasi bofman part 13 tahun 2022
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center popup-gallery">
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_item">
+                        <a href="#"><img src="{% static 'assets/img/gallery-1.jpg' %}" alt=""></a>
+                        <div class="plus">
+                            <a href="{% static 'assets/img/gallery-1.jpg' %}" class="popup-img"><i
+                                    class="fal fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_item">
+                        <a href="#"><img src="{% static 'assets/img/gallery-2.jpg' %}" alt=""></a>
+                        <div class="plus">
+                            <a href="{% static 'assets/img/gallery-2.jpg' %}" class="popup-img"><i
+                                    class="fal fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_item">
+                        <a href="#"><img src="{% static 'assets/img/gallery-3.jpg' %}" alt=""></a>
+                        <div class="plus">
+                            <a href="{% static 'assets/img/gallery-3.jpg' %}" class="popup-img"><i
+                                    class="fal fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_item">
+                        <a href="#"><img src="{% static 'assets/img/gallery-4.jpg' %}" alt=""></a>
+                        <div class="plus">
+                            <a href="{% static 'assets/img/gallery-4.jpg' %}" class="popup-img"><i
+                                    class="fal fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_item">
+                        <a href="#"><img src="{% static 'assets/img/gallery-5.jpg' %}" alt=""></a>
+                        <div class="plus">
+                            <a href="{% static 'assets/img/gallery-5.jpg' %}" class="popup-img"><i
+                                    class="fal fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_item">
+                        <a href="#"><img src="{% static 'assets/img/gallery-6.jpg' %}" alt=""></a>
+                        <div class="plus">
+                            <a href="{% static 'assets/img/gallery-6.jpg' %}" class="popup-img"><i
+                                    class="fal fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_item">
+                        <a href="#"><img src="{% static 'assets/img/gallery-7.jpg' %}" alt=""></a>
+                        <div class="plus">
+                            <a href="{% static 'assets/img/gallery-7.jpg' %}" class="popup-img"><i
+                                    class="fal fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_item">
+                        <a href="#"><img src="{% static 'assets/img/gallery-8.jpg' %}" alt=""></a>
+                        <div class="plus">
+                            <a href="{% static 'assets/img/gallery-8.jpg' %}" class="popup-img"><i
+                                    class="fal fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cmn_btn blue mrt">
+                    <a href="#">view all</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--+++++++ End gallery_sec ++++++-->
+    <!--+++++++ Start price_table_sec ++++++-->
+    <section class="price_table_sec pad_bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7">
+                    <div class="title">
+                        <h1>Ticket Pricing</h1>
+                        <p>Harga tiket masuk closing bofman4 part 14 2023
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_price">
+                        <h1>Presale-1</h1>
+                        <span><sub>RP</sub>100.000</span>
+                        <p>
+                        </p>
+                        <div class="cmn_btn">
+                            <a href="#">Get Ticket</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_price">
+                        <h1>Presale-2</h1>
+                        <span><sub>RP</sub>TBA</span>
+                        <p>
+                        </p>
+                        <div class="cmn_btn">
+                            <a href="#">Get Ticket</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_price">
+                        <h1>Normal Ticket</h1>
+                        <span><sub>RP</sub>TBA</span>
+                        <p>
+                        </p>
+                        <div class="cmn_btn">
+                            <a href="#">Get Ticket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--+++++++ End price_table_sec ++++++-->
+    <!--+++++++ Start blog_sec ++++++-->
+
+    <!--+++++++ End blog_sec ++++++-->
+    <!--+++++++ Start sponsors_sec ++++++-->
+    <section class="sponsors_sec pad">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="title">
+                        <h1>Our Sponsors</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/brand-logo-1.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/brand-logo-2.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/brand-logo-3.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/brand-logo-4.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row second_row text-center">
+                <div class="col">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/brand-logo-5.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/brand-logo-6.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/brand-logo-7.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/brand-logo-8.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/brand-logo-9.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--+++++++ End sponsors_sec ++++++-->
+    <!--+++++++ Start footer ++++++-->
+    {% include 'footer.html' %} 
+
+    <!--+++++++ End footer ++++++-->
+    <!--    Start scroll top button-->
+    <div class="scroll_top">
+        <img src="{% static 'assets/img/icon-scroll-top.png' %}" alt="">
+    </div>
+    <!--    End scroll top button-->
+    <!-- jQuery 3.3.1 first, then Popper js, then Bootstrap 4.3.1 JS -->
+    <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!--    Owl-carousel2.3.4 JS-->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <!--    magnific-popup JS-->
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <!--    Custom JS-->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}

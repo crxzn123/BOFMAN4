@@ -1,0 +1,39 @@
+{% load static %}
+<header>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col col-md-6 col-lg-3">
+                <div class="logo"><a href="{% static 'index-video.html"><img
+                            src="{% static 'assets/img/logAAAobofman.png' %}" alt=""></a></div>
+            </div>
+            <div class="col col-md-6 col-lg-9 text-right">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="#">Guest Stars</a></li>
+                        <li class="has-children">
+                            <a href="#">Lomba <i class="fal fa-plus"></i><i class="fal fa-minus"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="{% static 'index.html">I-TECH</a></li>
+                                    <li><a href="{% static 'index-video.html">ALMODE CUP</a></li>
+                                    <li><a href="{% static 'index-animate.html">ALINS CUP</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="book_btn">
+                    <a href="#">Book ticket</a>
+                </div>
+                <div class="mobile_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
