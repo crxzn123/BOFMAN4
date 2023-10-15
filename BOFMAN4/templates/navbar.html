@@ -39,3 +39,29 @@
         </div>
     </div>
 </header>
+
+<div class="slide-menu">
+    <span class="menu-close"><i class="fal fa-times"></i></span>
+    <div class="slide-menu-wrp">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="#">Guest Stars</a></li>
+                    <li class="has-children">
+                        <a href="#">Lomba <i class="fal fa-plus"></i><i class="fal fa-minus"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="{% static 'index.html">I-TECH</a></li>
+                                <li><a href="{% static 'index-video.html">ALMODE CUP</a></li>
+                                <li><a href="{% static 'index-animate.html">ALINS CUP</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

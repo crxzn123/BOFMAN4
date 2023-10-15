@@ -384,17 +384,16 @@ nav {
   background-image: url(assets/img/hero-area-bg.jpg);
   background-size:cover;
   background-position: center center;
-  height: auto;
-  position: absolute;
+  height: 800px;
+  position: relative;
   z-index: 1;
   overflow: hidden; }
   .hero_sec:before {
-    position:fixed;
+    position:absolute;
     content: "";
     left: 0;
     top: 0;
     background-image: url(assets/img/hero-area-bg.png);
-    background-size: cover;
     height: 100%;
     width: 100%; }
   .hero_sec:after {
