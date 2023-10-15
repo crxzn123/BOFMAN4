@@ -34,49 +34,7 @@
 
     <!--+++++++ End header sec ++++++-->
     <!--+++++++ Start hero_sec ++++++-->
-    <section class="hero_sec video">
-        <!-- <video loop muted autoplay poster="#" class="video-background">
-            <source src="{% static 'BOFMAN.mp4' %}" type="video/mp4">
-        </video> -->
-        <div class="container">
-            <div class="hero_sliderd">
-                <div class="single_slide">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-9 pd0">
-                            <h1>BOFMAN4 PART 14</h1>
-                            <p> 𝗕𝗼𝗳𝗺𝗮𝗻𝟰 𝗣𝘁 𝟭𝟰 merupakan acara pensi tahunan MAN 4 Jakarta, yang terdiri atas berbagai rangkaian acara
-                            </p>
-                            <div class="cmn_btn">
-                                <a href="">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero_bond">
-                <div class="hero_bottom">
-                    <div class="row align-items-center">
-                        <div class="col-6 col-lg-6">
-                            <div class="addrress">
-                                <span><i class="fal fa-map-marker-alt"></i> MAN 4 Jakarta, Jakarta Selatan</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-6 text-right">
-                            <div class="social_icons">
-                                <ul class="social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!--+++++++ End hero_sec ++++++-->
     <!--+++++++ Start about_sec ++++++-->
     <section class="about_sec pad">
@@ -86,10 +44,10 @@
                     <div class="about_content">
                         <span>Tentang Bofman</span>
                         <h1>Bofman 4 Part 14 2023</h1>
-                        <p>𝗕𝗼𝗳𝗺𝗮𝗻𝟰 𝗣𝘁 𝟭𝟰 merupakan acara pensi tahunan MAN 4 Jakarta, yang terdiri atas berbagai rangkaian acara, perlombaan, projek, dan puncaknya pada hari 𝗦𝗮𝗯𝘁𝘂, 𝟮𝟴 𝗢𝗸𝘁𝗼𝗯𝗲𝗿 𝟮𝟬𝟮𝟯
+                        <p> Bofman4 Part 14 merupakan acara pensi tahunan MAN 4 Jakarta yang terdiri atas berbagai rangkaian acara, perlombaan, projek, dan puncaknya pada hari Sabtu, 28 Oktober 2023, yakni Closing Bofman4 dengan mengundang berbagai guest star ternama. 
                         </p>
                         <div class="cmn_btn blue">
-                            <a href="#">Learn More</a>
+                            <a href="{% url 'about' %}">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -111,8 +69,8 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-7">
                     <div class="title">
-                        <h1>Meet the guest stars</h1>
-                        <p>guest stars yg akan tampil di acara closing bofman 4 part 14
+                        <h1>Meet Our Guest Stars</h1>
+                        <p>
                         </p>
                     </div>
                 </div>
@@ -308,7 +266,7 @@
                 <div class="col-12 col-md-10 col-lg-7">
                     <div class="title">
                         <h1>Events Gallery</h1>
-                        <p>Dokumentasi closing BOFMAN 4 part 13 dan berbagai rangkaian acara selama BOFMAN 4 part 14
+                        <p>Dokumentasi Closing Bofman4 Part 13 dan berbagai rangkaian acara Bofman4 Part 14
                         </p>
                     </div>
                 </div>
@@ -422,7 +380,7 @@
                         <p>
                         </p>
                         <div class="cmn_btn">
-                            <a href="#">Get Ticket</a>
+                            <a href="https://yesplis.com/event/bofman4-part-14">Get Ticket</a>
                         </div>
                     </div>
                 </div>
@@ -434,7 +392,7 @@
                         <p>
                         </p>
                         <div class="cmn_btn">
-                            <a href="#">Get Ticket</a>
+                            <a href="https://yesplis.com/event/bofman4-part-14">Get Ticket</a>
                         </div>
                     </div>
                 </div>
@@ -445,7 +403,7 @@
                         <p>
                         </p>
                         <div class="cmn_btn">
-                            <a href="#">Get Ticket</a>
+                            <a href="https://yesplis.com/event/bofman4-part-14">Get Ticket</a>
                         </div>
                     </div>
                 </div>
@@ -466,52 +424,64 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
                     <div class="brand">
-                        <img src="{% static 'assets/img/brand-logo-1.png' %}" alt="">
+                        <img src="{% static 'assets/img/(M)pgn.jpg' %}" alt="">
+                    </div>
+                </div> 
+                <div class="col-md-4 mb-3">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/(M)AMATERASUN.png' %}" alt="">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-4 mb-3">
                     <div class="brand">
-                        <img src="{% static 'assets/img/brand-logo-2.png' %}" alt="">
+                        <img src="{% static 'assets/img/(M)pln.png' %}" alt="">
                     </div>
                 </div>
-                <div class="col">
+                
+                <div class="col-md-2 mb-3 ">
                     <div class="brand">
-                        <img src="{% static 'assets/img/brand-logo-3.png' %}" alt="">
+                        <img src="{% static 'assets/img/(S)Coca-Cola.png' %}" alt="">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2 mb-3">
                     <div class="brand">
-                        <img src="{% static 'assets/img/brand-logo-4.png' %}" alt="">
+                        <img src="{% static 'assets/img/(S)BSI.JPG' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/(S)Dettol.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <div class="brand">
+                        <img src="{% static 'assets/img/(S)jasara.png' %}" alt="">
                     </div>
                 </div>
             </div>
-            <div class="row second_row text-center">
-                <div class="col">
+
+            <div class="row second_row justify-content-center">
+                <div class="col-md-2 mb-3">
                     <div class="brand">
-                        <img src="{% static 'assets/img/brand-logo-5.png' %}" alt="">
+                        <img src="{% static 'assets/img/(S)Logo-RSPB.jpg' %}" alt="">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2 mb-3">
                     <div class="brand">
-                        <img src="{% static 'assets/img/brand-logo-6.png' %}" alt="">
+                        <img src="{% static 'assets/img/(S)mandiri.png' %}" alt="">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2 mb-3">
                     <div class="brand">
-                        <img src="{% static 'assets/img/brand-logo-7.png' %}" alt="">
+                        <img src="{% static 'assets/img/(S)Triloda.jpg' %}" alt="">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2 mb-3">
                     <div class="brand">
-                        <img src="{% static 'assets/img/brand-logo-8.png' %}" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/brand-logo-9.png' %}" alt="">
+                        <img src="{% static 'assets/img/(S)JRP.png' %}" alt="">
                     </div>
                 </div>
             </div>
