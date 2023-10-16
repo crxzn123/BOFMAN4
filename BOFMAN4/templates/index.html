@@ -1,36 +1,43 @@
-{% load static %}
-{% block content %}
+{% load static %} {% block content %}
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Bootstrap 4.3.1 CSS -->
-    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
     <!--    Fontawesome 5 CSS-->
-    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}" />
     <!--    Fontawesome 5 all CSS-->
-    <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}" />
     <!--    Owl-carousel 2.3.4 CSS-->
-    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/owl.carousel.min.css' %}"
+    />
     <!--    magnific-popup CSS-->
-    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/magnific-popup.css' %}"
+    />
     <!--    animate CSS-->
-    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}" />
     <!--    Style CSS-->
-    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
     <title>Bofman 4 || Home</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Start Mobile menu-->
 
     <!--End Mobile menu-->
     <!--+++++++ Start header sec ++++++-->
-    {% include 'navbar.html' %} 
+    {% include 'navbar.html' %}
 
     <!--+++++++ End header sec ++++++-->
     <!--+++++++ Start hero_sec ++++++-->
@@ -38,79 +45,113 @@
     <!--+++++++ End hero_sec ++++++-->
     <!--+++++++ Start about_sec ++++++-->
     <section class="about_sec pad">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-12 col-lg-5">
-                    <div class="about_content">
-                        <span>Tentang Bofman</span>
-                        <h1>Bofman 4 Part 14 2023</h1>
-                        <p> Bofman4 Part 14 merupakan acara pensi tahunan MAN 4 Jakarta yang terdiri atas berbagai rangkaian acara, perlombaan, projek, dan puncaknya pada hari Sabtu, 28 Oktober 2023, yakni Closing Bofman4 dengan mengundang berbagai guest star ternama. 
-                        </p>
-                        <div class="cmn_btn blue">
-                            <a href="{% url 'about' %}">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 text-right">
-                    <div class="about_imges">
-                        <img src="{% static 'assets/img/about-bottomw.jpg' %}" alt="" class="a_bottom">
-                        <img src="{% static 'assets/img/about-topw.jpg' %}" alt="" class="a_top">
-                        <img src="{% static 'assets/img/about-circle.png' %}" alt="" class="a_circle">
-                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="a_pettern">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-lg-5">
+            <div class="about_content">
+              <span>Tentang Bofman</span>
+              <h1>Bofman 4 Part 14 2023</h1>
+              <p>
+                Bofman4 Part 14 merupakan acara pensi tahunan MAN 4 Jakarta yang
+                terdiri atas berbagai rangkaian acara, perlombaan, projek, dan
+                puncaknya pada hari Sabtu, 28 Oktober 2023, yakni Closing
+                Bofman4 dengan mengundang berbagai guest star ternama.
+              </p>
+              <div class="cmn_btn blue">
+                <a href="{% url 'about' %}">Learn More</a>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-lg-6 text-right">
+            <div class="about_imges">
+              <img
+                src="{% static 'assets/img/about-bottomw.jpg' %}"
+                alt=""
+                class="a_bottom"
+              />
+              <img
+                src="{% static 'assets/img/about-topw.jpg' %}"
+                alt=""
+                class="a_top"
+              />
+              <img
+                src="{% static 'assets/img/about-circle.png' %}"
+                alt=""
+                class="a_circle"
+              />
+              <img
+                src="{% static 'assets/img/pettern.png' %}"
+                alt=""
+                class="a_pettern"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--+++++++ End about_sec ++++++-->
     <!--+++++++ Start speaker_sec ++++++-->
     <section class="speaker_sec pad">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-7">
-                    <div class="title">
-                        <h1>Meet Our Guest Stars</h1>
-                        <p>
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7">
+            <div class="title">
+              <h1>Meet Our Guest Stars</h1>
+              <p></p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_speaker">
-                        <img src="{% static 'assets/img/Diskopantera.png' %}" alt="">
-                        <div class="speaker_info">
-                            <h4>DISKOPANTERA</h4>
-                            <span>
-                            </span>
-                        </div>
-                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_speaker">
-                        <img src="{% static 'assets/img/guest-star.jpg' %}" alt="">
-                        <div class="speaker_info">
-                            <h4>TBA</h4>
-                            <span></span>
-                        </div>
-                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_speaker">
-                        <img src="{% static 'assets/img/guest-star.jpg' %}" alt="">
-                        <div class="speaker_info">
-                            <h4>TBA</h4>
-                            <span></span>
-                        </div>
-                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
-                    </div>
-                </div>
-                        <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
-                    </div>
-                </div>
-                <!-- <div class="col-md-6 col-lg-4">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="single_speaker">
+              <img src="{% static 'assets/img/Diskopantera.png' %}" alt="" />
+              <div class="speaker_info">
+                <h4>DISKOPANTERA</h4>
+                <span> </span>
+              </div>
+              <img
+                src="{% static 'assets/img/pettern.png' %}"
+                alt=""
+                class="sh_pettern"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="single_speaker">
+              <img src="{% static 'assets/img/ArashBuana.png' %}" alt="" />
+              <div class="speaker_info">
+                <h4>Arash Buana</h4>
+                <span></span>
+              </div>
+              <img
+                src="{% static 'assets/img/pettern.png' %}"
+                alt=""
+                class="sh_pettern"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="single_speaker">
+              <img src="{% static 'assets/img/guest-star.jpg' %}" alt="" />
+              <div class="speaker_info">
+                <h4>TBA</h4>
+                <span></span>
+              </div>
+              <img
+                src="{% static 'assets/img/pettern.png' %}"
+                alt=""
+                class="sh_pettern"
+              />
+            </div>
+          </div>
+          <img
+            src="{% static 'assets/img/pettern.png' %}"
+            alt=""
+            class="sh_pettern"
+          />
+        </div>
+      </div>
+      <!-- <div class="col-md-6 col-lg-4">
                     <div class="single_speaker">
                         <img src="{% static 'assets/img/team-5.jpg' %}" alt="">
                         <div class="speaker_info">
@@ -130,7 +171,7 @@
                         <img src="{% static 'assets/img/pettern.png' %}" alt="" class="sh_pettern">
                     </div>
                 </div> -->
-                <!-- <div class="cmn_btn">
+      <!-- <div class="cmn_btn">
                     <a href="#">view all</a>
                 </div>
             </div>
@@ -261,154 +302,198 @@
     <!--+++++++ End upcoming_sec ++++++-->
     <!--+++++++ Start gallery_sec ++++++-->
     <section class="gallery_sec pad">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-7">
-                    <div class="title">
-                        <h1>Events Gallery</h1>
-                        <p>Dokumentasi Closing Bofman4 Part 13 dan berbagai rangkaian acara Bofman4 Part 14
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7">
+            <div class="title">
+              <h1>Events Gallery</h1>
+              <p>
+                Dokumentasi Closing Bofman4 Part 13 dan berbagai rangkaian acara
+                Bofman4 Part 14
+              </p>
             </div>
+          </div>
         </div>
-        <div class="container-fluid">
-            <div class="row no-gutters justify-content-center popup-gallery">
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_item">
-                        <a href="#"><img src="{% static 'assets/img/gallery/Close2.JPG' %}" alt=""></a>
-                        <div class="plus">
-                            <a href="{% static 'assets/img/gallery/Close2.JPG' %}" class="popup-img"><i
-                                    class="fal fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_item">
-                        <a href="#"><img src="{% static 'assets/img/gallery/Close3.JPG' %}" alt=""></a>
-                        <div class="plus">
-                            <a href="{% static 'assets/img/gallery/Close3.JPG' %}" class="popup-img"><i
-                                    class="fal fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_item">
-                        <a href="#"><img src="{% static 'assets/img/gallery/Close4.JPG' %}" alt=""></a>
-                        <div class="plus">
-                            <a href="{% static 'assets/img/gallery/Close4.JPG' %}" class="popup-img"><i
-                                    class="fal fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_item">
-                        <a href="#"><img src="{% static 'assets/img/gallery/Open1.JPG' %}" alt=""></a>
-                        <div class="plus">
-                            <a href="{% static 'assets/img/gallery/Open1.JPG' %}" class="popup-img"><i
-                                    class="fal fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_item">
-                        <a href="#"><img src="{% static 'assets/img/gallery/Open2.JPG' %}" alt=""></a>
-                        <div class="plus">
-                            <a href="{% static 'assets/img/gallery/Open2.JPG' %}" class="popup-img"><i
-                                    class="fal fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_item">
-                        <a href="#"><img src="{% static 'assets/img/gallery/Open3.JPG' %}" alt=""></a>
-                        <div class="plus">
-                            <a href="{% static 'assets/img/gallery/Open3.JPG' %}" class="popup-img"><i
-                                    class="fal fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_item">
-                        <a href="#"><img src="{% static 'assets/img/gallery/Open4.JPG' %}" alt=""></a>
-                        <div class="plus">
-                            <a href="{% static 'assets/img/gallery/Open4.JPG' %}" class="popup-img"><i
-                                    class="fal fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_item">
-                        <a href="#"><img src="{% static 'assets/img/gallery/Open5.JPG' %}" alt=""></a>
-                        <div class="plus">
-                            <a href="{% static 'assets/img/gallery/Open5.JPG' %}" class="popup-img"><i
-                                    class="fal fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cmn_btn blue mrt">
-                    <a href="{% url 'gallery' %}">view all</a>
-                </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center popup-gallery">
+          <div class="col-md-6 col-lg-3">
+            <div class="single_item">
+              <a href="#"
+                ><img src="{% static 'assets/img/gallery/Close2.JPG' %}" alt=""
+              /></a>
+              <div class="plus">
+                <a
+                  href="{% static 'assets/img/gallery/Close2.JPG' %}"
+                  class="popup-img"
+                  ><i class="fal fa-plus"></i
+                ></a>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="single_item">
+              <a href="#"
+                ><img src="{% static 'assets/img/gallery/Close3.JPG' %}" alt=""
+              /></a>
+              <div class="plus">
+                <a
+                  href="{% static 'assets/img/gallery/Close3.JPG' %}"
+                  class="popup-img"
+                  ><i class="fal fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="single_item">
+              <a href="#"
+                ><img src="{% static 'assets/img/gallery/Close4.JPG' %}" alt=""
+              /></a>
+              <div class="plus">
+                <a
+                  href="{% static 'assets/img/gallery/Close4.JPG' %}"
+                  class="popup-img"
+                  ><i class="fal fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="single_item">
+              <a href="#"
+                ><img src="{% static 'assets/img/gallery/Open1.JPG' %}" alt=""
+              /></a>
+              <div class="plus">
+                <a
+                  href="{% static 'assets/img/gallery/Open1.JPG' %}"
+                  class="popup-img"
+                  ><i class="fal fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="single_item">
+              <a href="#"
+                ><img src="{% static 'assets/img/gallery/Open2.JPG' %}" alt=""
+              /></a>
+              <div class="plus">
+                <a
+                  href="{% static 'assets/img/gallery/Open2.JPG' %}"
+                  class="popup-img"
+                  ><i class="fal fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="single_item">
+              <a href="#"
+                ><img src="{% static 'assets/img/gallery/Open3.JPG' %}" alt=""
+              /></a>
+              <div class="plus">
+                <a
+                  href="{% static 'assets/img/gallery/Open3.JPG' %}"
+                  class="popup-img"
+                  ><i class="fal fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="single_item">
+              <a href="#"
+                ><img src="{% static 'assets/img/gallery/Open4.JPG' %}" alt=""
+              /></a>
+              <div class="plus">
+                <a
+                  href="{% static 'assets/img/gallery/Open4.JPG' %}"
+                  class="popup-img"
+                  ><i class="fal fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="single_item">
+              <a href="#"
+                ><img src="{% static 'assets/img/gallery/Open5.JPG' %}" alt=""
+              /></a>
+              <div class="plus">
+                <a
+                  href="{% static 'assets/img/gallery/Open5.JPG' %}"
+                  class="popup-img"
+                  ><i class="fal fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="cmn_btn blue mrt">
+            <a href="{% url 'gallery' %}">view all</a>
+          </div>
         </div>
+      </div>
     </section>
     <!--+++++++ End gallery_sec ++++++-->
     <!--+++++++ Start price_table_sec ++++++-->
     <section class="price_table_sec pad_bottom">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-7">
-                    <div class="title">
-                        <h1>Ticket Pricing</h1>
-                        <p>Harga tiket masuk closing bofman4 part 14 2023
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7">
+            <div class="title">
+              <h1>Ticket Pricing</h1>
+              <p>Harga tiket masuk closing bofman4 part 14 2023</p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_price">
-                        <h1>Presale-1</h1>
-                        <span><sub>RP</sub>100.000</span>
-                        <p>
-                        </p>
-                        <div class="cmn_btn">
-                            <a href="https://yesplis.com/event/bofman4-part-14">Get Ticket</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_price">
-                        <h1>Presale-2</h1>
-                        <span><sub>RP</sub>TBA</span>
-                        <p>
-                        </p>
-                        <div class="cmn_btn">
-                            <a href="https://yesplis.com/event/bofman4-part-14">Get Ticket</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_price">
-                        <h1>Normal Ticket</h1>
-                        <span><sub>RP</sub>TBA</span>
-                        <p>
-                        </p>
-                        <div class="cmn_btn">
-                            <a href="https://yesplis.com/event/bofman4-part-14">Get Ticket</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="single_price">
+              <h1>Presale-1</h1>
+              <span><sub>RP</sub>100.000</span>
+              <p></p>
+              <div class="cmn_btn">
+                <a href="https://yesplis.com/event/bofman4-part-14"
+                  >Get Ticket</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="single_price">
+              <h1>Presale-2</h1>
+              <span><sub>RP</sub>120.000</span>
+              <p></p>
+              <div class="cmn_btn">
+                <a href="https://yesplis.com/event/bofman4-part-14"
+                  >Get Ticket</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="single_price">
+              <h1>Normal Ticket</h1>
+              <span><sub>RP</sub>TBA</span>
+              <p></p>
+              <div class="cmn_btn">
+                <a href="https://yesplis.com/event/bofman4-part-14"
+                  >Get Ticket</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--+++++++ End price_table_sec ++++++-->
     <!--+++++++ Start blog_sec ++++++-->
@@ -416,85 +501,124 @@
     <!--+++++++ End blog_sec ++++++-->
     <!--+++++++ Start sponsors_sec ++++++-->
     <section class="sponsors_sec pad">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6">
-                    <div class="title">
-                        <h1>Our Sponsors</h1>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            <div class="title">
+              <h1>Our Sponsors</h1>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(M)pgn.jpg' %}" alt="">
-                    </div>
-                </div> 
-                <div class="col-md-4 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(M)AMATERASUN.png' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(M)pln.png' %}" alt="">
-                    </div>
-                </div>
-                
-                <div class="col-md-2 mb-3 ">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(S)Coca-Cola.png' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(S)BSI.JPG' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(S)Dettol.png' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(S)jasara.png' %}" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row second_row justify-content-center">
-                <div class="col-md-2 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(S)Logo-RSPB.jpg' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(S)mandiri.png' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(S)Triloda.jpg' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <div class="brand">
-                        <img src="{% static 'assets/img/(S)JRP.png' %}" alt="">
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/(M)pgn.jpg' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/(M)AMATERASUN.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/(M)pln.png' %}" alt="" />
+            </div>
+          </div>
+
+          <div class="col-3 md-2 mb-3 xs-1">
+            <div class="brand">
+              <img src="{% static 'assets/img/(S)Dettol.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-3 md-2 mb-3 xs-1">
+            <div class="brand">
+              <img src="{% static 'assets/img/(S)jasara.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-3 md-2 mb-3 xs-1">
+            <div class="brand">
+              <img src="{% static 'assets/img/(S)CocaCola.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-3 md-2 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/(S)BSI.jpg' %}" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row second_row justify-content-center">
+          <div class="col-3 md-2 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/(S)Logo-RSPB.jpg' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-3 md-2 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/(S)mandiri.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-3 md-2 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/(S)Triloda.jpg' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-3 md-2 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/(S)JRP.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--+++++++ End sponsors_sec ++++++-->
+
+    <!--+++++++ Start sponsors_sec ++++++-->
+    <section class="sponsors_sec pad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            <div class="title">
+              <h1>Our Media Partner</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/MediaPartner/InformasiEvent.jpg' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/MediaPartner/EdaranEvent.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/MediaPartner/MotauEvent.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/MediaPartner/MadingEvent.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="brand">
+              <img src="{% static 'assets/img/MediaPartner/EventList.png' %}" alt="" />
+            </div>
+          </div>
+    </section>
+    <!--+++++++ End Media Partner ++++++-->
     <!--+++++++ Start footer ++++++-->
-    {% include 'footer.html' %} 
+    {% include 'footer.html' %}
 
     <!--+++++++ End footer ++++++-->
     <!--    Start scroll top button-->
     <div class="scroll_top">
-        <img src="{% static 'assets/img/icon-scroll-top.png' %}" alt="">
+      <img src="{% static 'assets/img/icon-scroll-top.png' %}" alt="" />
     </div>
     <!--    End scroll top button-->
     <!-- jQuery 3.3.1 first, then Popper js, then Bootstrap 4.3.1 JS -->
@@ -507,7 +631,6 @@
     <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
     <!--    Custom JS-->
     <script src="{% static 'assets/js/custom.js' %}"></script>
-</body>
-
+  </body>
 </html>
 {% endblock %}

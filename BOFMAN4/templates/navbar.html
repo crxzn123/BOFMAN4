@@ -9,22 +9,11 @@
             <div class="col col-md-6 col-lg-9 text-right">
                 <nav>
                     <ul class="menu">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="{% url 'landing' %}">Home</a></li>
                         <li><a href="{% url 'about' %}">About</a></li>
                         <li><a href="{% url 'gallery' %}">Gallery</a></li>
                         <li><a href="{% url 'merch' %}">Merchandise</a></li>
                         <li><a href="{% url 'perform' %}">Guest Stars</a></li>
-                        <li class="has-children">
-                            <a href="#">Lomba <i class="fal fa-plus"></i><i class="fal fa-minus"></i></a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li><a href="{% static 'index.html">I-TECH</a></li>
-                                    <li><a href="{% static 'index-video.html">ALMODE CUP</a></li>
-                                    <li><a href="{% static 'index-animate.html">ALINS CUP</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
                     </ul>
                 </nav>
                 <div class="book_btn">
@@ -44,23 +33,11 @@
     <span class="menu-close"><i class="fal fa-times"></i></span>
     <div class="slide-menu-wrp">
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-                    <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'perform' %}">Guest Stars</a></li>
-                    <li class="has-children">
-                        <a href="#">Lomba <i class="fal fa-plus"></i><i class="fal fa-minus"></i></a>
-                        <div class="dropdown">
-                            <ul>
-                                <li><a href="{% static 'index.html">I-TECH</a></li>
-                                <li><a href="{% static 'index-video.html">ALMODE CUP</a></li>
-                                <li><a href="{% static 'index-animate.html">ALINS CUP</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    </ul>
-                </div>
-            </li>
+            <li><a href="{% url 'landing' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+            <li><a href="{% url 'merch' %}">Merchandise</a></li>
+            <li><a href="{% url 'perform' %}">Guest Stars</a></li>
         </ul>
     </div>
 </div>
@@ -88,7 +65,7 @@
                 <div class="row align-items-center">
                     <div class="col-6 col-lg-6">
                         <div class="addrress">
-                            <span><i class="fal fa-map-marker-alt"></i> MAN 4 Jakarta, Jakarta Selatan</span>
+                            <span><i class="fal fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/B9GwdZFZAYFuJwqy7" style="color: aliceblue;">MAN 4 Jakarta, Jakarta Selatan </a></span>
                         </div>
                     </div>
                     <div class="col-6 col-lg-6 text-right">
